@@ -277,12 +277,12 @@ header p{
 
   footer{
     background-color: var(--platinum);
-    padding: 35px;
+    padding: 20px;
   }
 
   footer h3{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0px;
     color: var(--dim-gray);
   }
@@ -329,8 +329,8 @@ header p{
         padding: 10px;
     }
 
-    footer h2{
-        font-size: .9rem;
+    footer h3{
+        font-size: .7rem;
     }
   }
 
