@@ -19,6 +19,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -76,7 +77,7 @@ header{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     text-align: center;
     background-color: var(--platinum);
 }
@@ -170,34 +171,32 @@ header p{
     color: var(--dim-gray);
     padding: 20px;
   }
-  
-  .services-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .services-list li {
-    margin-bottom: 10px;
-    padding: 10px;
+
+  .content-container{
     background-color: var(--antiflash-white);
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px var(--dim-gray);
-    color: var(--black);
-    font-size: 1.2rem;
+    padding: 20px;
   }
-  
-  .services-list li:last-child {
-    margin-bottom: 0;
-  }
-  
-  .services-list li:before {
-    content: "-";
+
+  .content-container h3{
     color: var(--dim-gray);
-    font-weight: bolder;
-    margin-right: 5px;
-    font-weight: bold;
   }
-  
+
+  .content-container ul{
+    list-style: none;
+  }
+
+  .content-container ul li{
+    padding-bottom: 10px;
+    font-size: 1rem;
+    color: var(--dim-gray);
+    letter-spacing: 1px;
+  }
+
+  .content-container i{
+    font-style:oblique;
+    font-size: .7rem;
+    color: var(--dim-gray);
+  }
 
   @media(max-width: 1000px){
 
@@ -205,19 +204,49 @@ header p{
         padding: 5px;
     }
 
-    .services-list li{
-        font-size: .9rem;
+    .content-container h3{
+      font-size: 1rem;
     }
+
+    .content-container ul li{
+      font-size: .9rem;
+    }
+
+    .content-container i{
+      font-size: .6rem;
+    }
+
   }
  
 
   @media(max-width: 768px){
-    .services-list li{
-        font-size: .8rem;
-    }
+    
 
     .Services h2{
         font-size: 1.5rem;
+    }
+
+    .content-container h3{
+      font-size: .9rem;
+    }
+
+    .content-container ul li{
+      font-size: .8rem;
+    }
+
+    .content-container i{
+      font-size: .5rem;
+    }
+
+  }
+
+  @media(max-width: 500px){
+    .content-container h3{
+      font-size: .8rem;
+    }
+
+    .content-container ul li{
+      font-size: .7rem;
     }
   }
 
